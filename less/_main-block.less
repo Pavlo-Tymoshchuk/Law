@@ -1,0 +1,337 @@
+/* Main banner */
+
+.main-banner {
+    height: 698px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 140px;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(51, 51, 51, 0.5);
+        z-index: -1;
+    }
+    
+    .main-button__text {
+        &::before {
+            background-color: #9B6826;
+        }
+    }
+    
+    .main-button__decor {
+        border-color: #9B6826;
+    }
+}
+
+.main-banner__info {
+    padding-top: 175px;
+}
+
+.main-banner__caption {
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 130%;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    max-width: 760px;
+}
+
+.main-banner__text {
+    font-size: 20px;
+    line-height: 29px;
+    margin-bottom: 40px;
+}
+
+.main-banner__callback {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    max-width: 830px;
+    width: 100%;
+    padding: 25px;
+    background-color: #111111;
+    
+    .button-callback {
+        &:first-child {
+            position: relative;
+            margin-right: 135px;
+            
+            &::before {
+                content: "";
+                position: absolute;
+                right: -70px;
+                top: -15px;
+                width: 1px;
+                height: 75px;
+                background: rgba(153, 153, 153, 0.25);
+                pointer-events: none;
+            }
+        }
+    }
+}
+
+.main-banner__social {
+    position: absolute;
+    right: 60px;
+    top: 70px;
+}
+
+.social__item {
+    margin-bottom: 20px;
+}
+
+.social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: rgba(238, 237, 237, 0.3);
+    line-height: 0px;
+    
+    span {
+        &::before {
+            transition: color .4s;
+        }
+    }
+}
+
+/* /Main banner */
+
+/* Services */
+
+.services {
+    padding-bottom: 150px;
+}
+
+.services__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: -20px;
+    margin-bottom: -20px;
+}
+
+.services__item {
+    width: calc(33.33% - 20px);
+    background-color: #1F1F1F;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    margin-bottom: 20px;
+    position: relative;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        height: calc(100% - 20px);
+        width: 27px;
+        background: url(../img/decor-elem-rotate.svg) center / contain repeat;
+    }
+}
+
+.services__img {
+    width: 106px;
+    height: 106px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.services__sub {
+    font-size: 14px;
+    line-height: 21px;
+    color: #999999;
+    margin-bottom: 10px;
+}
+
+.services__caption {
+    font-size: 18px;
+    line-height: 27px;
+    height: 51px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.services__link {
+    display: flex;
+    align-items: center;
+}
+
+.services__link__text {
+    font-size: 14px;
+    line-height: 21px;
+    color: #999999;
+    margin-right: 10px;
+    transition: color .4s;
+}
+
+.services__link__decor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #303030;
+    border-radius: 50%;
+    
+    span {
+        font-size: 6px;
+        
+        &::before {
+            color: #9B6826;
+        }
+    }
+}
+
+/* /Services */
+
+/* About us */
+
+.about-us {
+    background-color: #EEEDED;
+    padding: 150px 0px;
+}
+
+.about-company {
+    position: relative;
+    
+    .main-button {
+        justify-content: flex-end;
+    }
+    
+    .main-button__text {
+        color: #9B6826;
+        
+        &::before {
+            background-color: #D6D4D4;
+        }
+    }
+    
+    .main-button__decor {
+        border-color: #D6D4D4;
+        
+        span {
+            &::before {
+                color: #9B6826;
+            }
+        }
+    }
+}
+
+.about-company-img__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1090px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: -165px;
+}
+
+.about-company__img {
+    width: calc(50% - 10px);
+    height: 346px;
+}
+
+.about-company__info {
+    max-width: 580px;
+    width: 100%;
+    margin-left: auto;
+}
+
+.about-company__name {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    line-height: 29px;
+    color: #333333;
+    margin-top: 44px;
+}
+
+.about-company__logo {
+    margin-right: 20px;
+}
+
+.about-company__description {
+    color: #4F4F4F;
+    margin: 20px 0px;
+}
+
+
+.work-with-us {
+    padding: 150px 0px;
+}
+
+.work-with-us__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.work-with-us__item {
+    width: calc(25% - 33px);
+    position: relative;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        left: -16px;
+        top: 0px;
+        height: 100%;
+        width: 1px;
+        background-color: #DADADA;
+    }
+}
+
+.work-with-us__caption {
+    font-size: 18px;
+    line-height: 120%;
+    height: 43px;
+    overflow: hidden;
+    margin-bottom: 8px;
+    color: #1F1F1F;
+}
+
+.work-with-us__text {
+    font-size: 16px;
+    line-height: 130%;
+    color: #999999;
+}
+
+.our-partner__list {
+    display: flex;
+    justify-content: space-between;
+    margin-right: -20px;
+}
+
+.our-partner__item {
+    width: calc(16.666% - 20px);
+}
+
+.our-partner__img {
+    width: 100%;
+    height: 180px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.our-partner__name {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #1F1F1F;
+    text-align: center;
+}
